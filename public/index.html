@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz Challenge</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-app">
+        <div class="quiz-container">
+            <div id="welcome-screen">
+                <h1>Quiz Challenge</h1>
+                <p class="welcome-text">Test your knowledge and earn achievements!</p>
+                <div class="stats-preview">
+                    <div class="stat-item">
+                        <i class="fas fa-star"></i>
+                        <span>Earn Points</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-trophy"></i>
+                        <span>Win Badges</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Track Progress</span>
+                    </div>
+                </div>
+                <button id="start-btn" class="btn-primary">
+                    <i class="fas fa-play"></i> Start Challenge
+                </button>
+            </div>
+            
+            <div id="question-container" class="hidden">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="status-bar">
+                    <div class="score-display">
+                        <i class="fas fa-star"></i>
+                        <span id="current-score">0</span>
+                    </div>
+                    <div class="timer">
+                        <i class="fas fa-clock"></i>
+                        <span id="time-remaining">20</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="result" class="hidden">
+                <div class="confetti-container"></div>
+            </div>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
